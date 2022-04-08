@@ -3,8 +3,8 @@ import java.lang.management.ManagementFactory;
 import com.sun.tools.attach.VirtualMachine;
 
 public class AgentAttacher {
-     String pid;
-     String path;
+     public static String pid;
+     public static String path;
   
      public static void main(String[] args) {
        if(args.length < 2) {
