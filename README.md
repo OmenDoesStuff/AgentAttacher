@@ -1,2 +1,2 @@
-# JVMDumper
-Dump Classes From A Running JVM
+# AgentAttacher
+Dynamically Attach A Java Agent To A JVM
