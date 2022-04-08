@@ -19,4 +19,15 @@ public class AgentAttacher {
        vm.loadAgent(path, "");
        vm.detach();
      }
+
+     
+     public static void attachAgent(String jvmPid, String agentPath) {
+      
+       pid = jvmPid;
+       path = agentPath;
+       
+       VirtualMachine vm = VirtualMachine.attach(pid);
+       vm.loadAgent(path, "");
+       vm.detach();
+     }
 }
